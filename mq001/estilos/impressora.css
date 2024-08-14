@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* estilo para impressão */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Configuração da letra monoespaçada e serifada para imprimir e 
+com maior tamano e espaçamento entre linhas */
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/* Faz o menu sumir para impressão */
+
+menu {
+    display: none;
+}
+
+/* Faz o artigo(texto) ocupar 100% 
+da página para impressão */
+
+article {
+    width: 100%;
+}
+
+/* Coloca de onde veio a informação impressa */
+
+article::after {
+    content: 'Esse artigo doi impresso através do site www.cursoemvideo.com';
+}
