@@ -20,8 +20,24 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+i#burguer {
+    background-color: rgb(48, 48, 48); 
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    /* Faz o cursor virar a mãozinha */
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    /* Para sumir o menu(opções) para celulares - Mobile First */
+    display: none;
 }
 
 menu > ul {
